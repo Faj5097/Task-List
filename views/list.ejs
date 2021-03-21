@@ -2,14 +2,19 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Task List</title>
+    <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
+    <h1><%= listTitle %></h1>
     <ul>
       <li>Erstes Element</li>
       <li>Zweites Element</li>
       <li>Drittes Element</li>
-
+      <form action="/" method="post">
+        <input type="text" name="newTask" value="" placeholder="Add New Task">
+        <input type="submit" name="addButton" value="">
+      </form>
     </ul>
   </body>
 </html>
